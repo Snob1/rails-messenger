@@ -1,0 +1,7 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, label: 'type your name', input_html: {value: f.object.name} %>
+
+  <%= f.button :submit, class: "btn btn-primary"%>
+<% end %>
+
